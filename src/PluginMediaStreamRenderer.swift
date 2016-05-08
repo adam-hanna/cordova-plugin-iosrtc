@@ -27,13 +27,13 @@ class PluginMediaStreamRenderer : NSObject, RTCEAGLVideoViewDelegate {
 		// It's placed over the elementView.
 		self.videoView = RTCEAGLVideoView()
 
-		self.webView.addSubview(self.elementView)
-		self.webView.bringSubviewToFront(self.elementView)
+		// self.webView.addSubview(self.elementView)
+		// self.webView.bringSubviewToFront(self.elementView)
 
 		self.elementView.userInteractionEnabled = false
 		self.elementView.hidden = true
 		self.elementView.backgroundColor = UIColor.blackColor()
-		self.elementView.addSubview(self.videoView)
+		// self.elementView.addSubview(self.videoView)
 		self.elementView.layer.masksToBounds = true
 
 		self.videoView.userInteractionEnabled = false
